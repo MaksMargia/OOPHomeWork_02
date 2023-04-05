@@ -1,23 +1,16 @@
 package HomeWork_2;
 
-public abstract class Human extends Animal implements Speakable {
+import HomeWork_2.impl.Doctor;
+
+public abstract class Human implements Speakable {
+        private String name;
+
     public Human(String name) {
-        super(name, null, 2);
+        this.name = name;
     }
 
-    @Override
-    public void speak() {
-        System.out.printf("Здравствуйте, я доктор %s%n", this.getName());
+    public String getName() {
+        return name;
     }
-
-    @Override
-    public String toString() {
-        return String.format("%s %s", this.getType(), this.getName());
-    }
-
-    @Override
-    public void hunt() {}
-
-
-    public abstract void heal();
 }
+

@@ -59,7 +59,7 @@ public abstract class Animal {
         return animalsCount;
     }
 
-    public abstract void speak();
+    public abstract String speak();
 
     public abstract void hunt();
 
