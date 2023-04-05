@@ -9,13 +9,10 @@ import java.util.List;
 
 public class VetClinic {
     private final List<Animal> animals;
-    private Human healer;
 
-    public VetClinic(Human healer) {
-        this.healer = healer;
+    // Конструктор
+    public VetClinic() {
         this.animals = new ArrayList<>();
-    }
-    public VetClinic() { this(null);
     }
 
     public List<Animal> getAllAnimals() { return this.animals; }
@@ -56,16 +53,8 @@ public class VetClinic {
         return speakingAnimals;
     }
 
-
     public VetClinic addAnimal(Animal animal) {
-        if (animal instanceof Human)
-            this.healer = (Human) animal;
-        else
-            this.animals.add(animal);
+        this.animals.add(animal);
         return this;
-    }
-
-    public Doctor getHeal() {
-        return (Doctor) healer;
     }
 }
