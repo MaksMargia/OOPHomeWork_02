@@ -13,7 +13,9 @@ public class Goldfish extends Animal implements Illable, Swimmable {
         this(name, null);
     }
     @Override
-    public void speak() {}
+    public String speak() {
+        return null;
+    }
 
     @Override
     public void hunt() {}

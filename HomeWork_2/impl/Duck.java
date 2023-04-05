@@ -17,8 +17,9 @@ public class Duck extends Animal implements Flyable, Illable, Runnable, Swimmabl
     }
 
     @Override
-    public void speak() {
+    public String speak() {
         System.out.println("Утка произносит: Кря-кря!");
+        return null;
     }
 
     public void hunt() {

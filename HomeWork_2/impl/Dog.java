@@ -8,7 +8,7 @@ import HomeWork_2.Speakable;
 
 public class Dog extends Animal implements Illable, Runnable, Swimmable, Speakable {
     public Dog(String name, String color) {
-        super(name, color,4);
+        super(name, color, 4);
     }
 
     public Dog(String name) {
@@ -42,7 +42,8 @@ public class Dog extends Animal implements Illable, Runnable, Swimmable, Speakab
     }
 
     @Override
-    public void getIll() {}
+    public void getIll() {
+    }
 
     @Override
     public int getRunSpeed() {
@@ -55,8 +56,10 @@ public class Dog extends Animal implements Illable, Runnable, Swimmable, Speakab
     }
 
     @Override
-    public void speak() {
+    public String speak() {
         System.out.println("Собака произносит: Гав-гав!");
-        }
+        return null;
     }
+}
+
 
