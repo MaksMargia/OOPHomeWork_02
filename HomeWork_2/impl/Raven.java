@@ -14,7 +14,7 @@ public class Raven extends Animal implements Flyable, Illable, Runnable, Speakab
     }
     @Override
     public void speak() {
-        System.out.println("Кар-кар!");
+        System.out.println("Вопрон прозносит: Кар-кар!");
     }
 
     public void hunt() {

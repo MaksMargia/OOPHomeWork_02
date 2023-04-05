@@ -16,7 +16,7 @@ public class Cat extends Animal implements Illable, Runnable, Speakable {
 
     @Override
     public void speak() {
-        System.out.println("Мяу-мяу!");
+        System.out.println("Кот произносит: Мяу-мяу!");
     }
 
     public void hunt() {

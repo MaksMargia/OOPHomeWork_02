@@ -56,7 +56,7 @@ public class Dog extends Animal implements Illable, Runnable, Swimmable, Speakab
 
     @Override
     public void speak() {
-        System.out.println("Гав-гав!");
+        System.out.println("Собака произносит: Гав-гав!");
         }
     }
 
