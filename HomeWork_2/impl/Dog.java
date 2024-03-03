@@ -5,7 +5,6 @@ import HomeWork_2.Runnable;
 import HomeWork_2.Swimmable;
 import HomeWork_2.Illable;
 import HomeWork_2.Speakable;
-
 public class Dog extends Animal implements Illable, Runnable, Swimmable, Speakable {
     public Dog(String name, String color) {
         super(name, color, 4);
